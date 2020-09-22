@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .parent{
+            display: grid;
+            place-items: center;
+        }
+        .child{
+            position: relative;
+            margin-top: 70px;
+            height: auto;
+            width: 200px;
+            box-shadow: 0 16px 60px rgba(0, 0, 0, 0.3);
+            
+        }
+        .top{
+            padding: 5px;
+            border-width: 1px 1px 1px 1px;
+            border-style: solid;
+            border-color: #ccc;
+            border-radius: 8px 8px 0px 0px;
+            transition: all 0.65s ease;
+/*
+            box-shadow: 0 0 60px rgba(0, 0, 0, 0.3),
+                0 0 10px rgba(0, 0, 0, 0.3) inset;
+*/
+            
+        }
+        .bottom{
+            padding: 5px;
+            border-width: 1px 1px 1px 1px;
+            border-style: solid;
+            border-color: #ccc;
+            border-radius: 0px 0px 8px 8px;
+            margin-top: -1px;
+            transition: all 0.65s ease;
+/*
+            box-shadow: 0 0 60px rgba(0, 0, 0, 0.3),
+                0 0 10px rgba(0, 0, 0, 0.3) inset;
+*/
+        }
+        
+         .top:hover {
+            transform: scale(1.1, 1.1);
+            border-width: 1px 1px 1px 1px;
+            border-style: solid;
+            border-color: #ccc;
+            border-radius: 8px 8px 8px 8px;
+            box-shadow: 0 16px 60px rgba(0, 0, 0, 0.3),
+                0 0 10px rgba(0, 0, 0, 0.3) inset;
+        }
+        .top:hover + .bottom{
+/*            transform: scale(0.95, 0.95);*/
+            border-width: 1px 1px 1px 1px;
+            border-style: solid;
+            border-color: #ccc;
+            border-radius: 8px 8px 8px 8px;
+            margin-top: 4px;
+            box-shadow: 0 16px 60px rgba(0, 0, 0, 0.3),
+                0 0 10px rgba(0, 0, 0, 0.3) inset;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child">
+            <div class="top">
+                <p>Specifies the position of the image or video inside its content box. First value controls the x-axis and the second value controls the y-axis. Can be a string (left, center or right), or a number (in px or %). Negative values are allowed</p>
+            </div>
+            
+            <div class="bottom">
+                <p>The object-position property is used together with object-fit to specify how an or  
+
+</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
